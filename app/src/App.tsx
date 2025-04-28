@@ -1,10 +1,10 @@
-import React, { SetStateAction, useState } from 'react';
+import { SetStateAction, useState } from 'react';
 import './App.css';
 import {
   APIProvider,
   Map,
   MapCameraProps,
-  Marker,
+  AdvancedMarker,
 } from '@vis.gl/react-google-maps';
 
 // TODO: Get a Google Maps Platform API key:
@@ -126,8 +126,8 @@ function App() {
             disableDefaultUI={true}
             {...cameraState}
           >
-            <Marker position={SANTIAGO_LOCATION} />
-            <Marker position={LAGOS_LOCATION} />
+            <AdvancedMarker position={SANTIAGO_LOCATION} />
+            <AdvancedMarker position={LAGOS_LOCATION} />
           </Map>
         </APIProvider>
       </div>
